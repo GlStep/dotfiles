@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+!.gitignore
+
+# Except
+!/.config/
+/.config/*
+!/.config/nvim/
+
+!.bashrc
+!.bash_profile
