@@ -6,6 +6,8 @@
 !/.config/
 /.config/*
 !/.config/nvim/
+!/.config/hypr/
+!/.config/tmux/
 
 !.bashrc
 !.bash_profile
