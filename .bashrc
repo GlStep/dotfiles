@@ -23,3 +23,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# neovim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+# neovim end
