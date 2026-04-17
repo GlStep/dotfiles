@@ -1,0 +1,22 @@
+# ignore every file except the following ones
+/*
+!.gitignore
+
+# whitelist .config directory, but not yet the contents
+!/.config/
+/.config/*
+
+# kitty
+!/.config/kitty/
+!/.config/kitty/**
+
+# fish
+!/.config/fish/
+!/.config/fish/**
+
+# nvim
+!/.config/nvim/
+!/.config/nvim/**
+
+**/.DS_Store
+
