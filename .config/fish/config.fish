@@ -1,5 +1,6 @@
 if status is-interactive
   # Commands to run in interactive sessions can go here
+  source (pyenv virtualenv-init -|psub)
 end
 
 # CUSTOM EXPORTS by USER

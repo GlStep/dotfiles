@@ -1,0 +1,7 @@
+include ./theme.conf
+
+shell fish
+
+font_family family="JetBrainsMono Nerd Font Mono"
+
+
