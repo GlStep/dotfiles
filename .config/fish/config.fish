@@ -1,3 +1,5 @@
+eval (/opt/homebrew/bin/brew shellenv)
+
 set -gx PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
 
@@ -15,6 +17,8 @@ fish_add_path /opt/homebrew/opt/ruby/bin
 if status is-interactive
 # Commands to run in interactive sessions can go here
 	pyenv init - fish | source
+	zoxide init fish | source
+	fzf --fish | source
+	starship init fish | source
 end
 
-eval (/opt/homebrew/bin/brew shellenv)
