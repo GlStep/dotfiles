@@ -15,10 +15,21 @@ fish_add_path $HOME/.cargo/bin
 fish_add_path /opt/homebrew/opt/ruby/bin
 
 if status is-interactive
-# Commands to run in interactive sessions can go here
 	pyenv init - fish | source
 	zoxide init fish | source
 	fzf --fish | source
 	starship init fish | source
+
+	abbr pya "pyenv activate"
+	abbr pyd "pyenv deactivate"
+
+	abbr pd "pnpm run dev"
+	abbr pb "pnpm run build"
+
+	abbr gs "git status"
+	abbr gd "git diff"
+	abbr gl "git log --oneline --graph --decorate"
+
+	abbr reload "source ~/.config/fish/config.fish; echo 'Fish has been reloaded'"
 end
 
