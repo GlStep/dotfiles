@@ -1,5 +1,9 @@
 eval (/opt/homebrew/bin/brew shellenv)
 
+if not set -q nvm_default_version
+	set --universal nvm_default_version lts
+end
+
 set -gx PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
 
