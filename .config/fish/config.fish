@@ -4,11 +4,16 @@ if not set -q nvm_default_version
 	set --universal nvm_default_version lts
 end
 
+fish_add_path /usr/local/bin
+
 set -gx PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
 
 set -gx PNPM_HOME $HOME/Library/pnpm
 fish_add_path $PNPM_HOME
+
+set -gx BUN_INSTALL $HOME/.bun
+fish_add_path $BUN_INSTALL/bin
 
 fish_add_path $HOME/.local/bin
 
