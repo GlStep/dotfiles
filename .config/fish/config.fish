@@ -25,6 +25,7 @@ fish_add_path /opt/homebrew/opt/ruby/bin
 
 if status is-interactive
 	pyenv init - fish | source
+	direnv hook fish | source
 	zoxide init fish | source
 	fzf --fish | source
 	starship init fish | source
